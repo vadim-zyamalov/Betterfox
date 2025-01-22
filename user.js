@@ -223,6 +223,22 @@ user_pref("layout.word_select.eat_space_to_next_word", false);
 // visit https://github.com/yokoffing/Betterfox/wiki/Optional-Hardening
 // Enter your personal overrides below this line:
 
+// PREF: enforce certificate pinning
+// [ERROR] MOZILLA_PKIX_ERROR_KEY_PINNING_FAILURE
+// 1 = allow user MiTM (such as your antivirus) (default)
+// 2 = strict
+user_pref("security.cert_pinning.enforcement_level", 2);
+
+// PREF: disable login manager
+user_pref("signon.rememberSignons", false);
+
+// PREF: disable address and credit card manager
+user_pref("extensions.formautofill.addresses.enabled", false);
+user_pref("extensions.formautofill.creditCards.enabled", false);
+
+// PREF: display the installation prompt for all extensions
+user_pref("extensions.postDownloadThirdPartyPrompt", false);
+
 // PREF: download to Downloads automatically
 user_pref("browser.download.useDownloadDir", true);
 
@@ -230,7 +246,7 @@ user_pref("browser.download.useDownloadDir", true);
 user_pref("browser.theme.content-theme", 0);
 user_pref("browser.theme.toolbar-theme", 0);
 
-// PREF: return Compact icons
+// PREF: browser UI density
 user_pref("browser.uidensity", 1);
 
 // PREF: UI
