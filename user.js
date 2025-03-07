@@ -251,7 +251,7 @@ user_pref("browser.theme.content-theme", 0);
 user_pref("browser.theme.toolbar-theme", 0);
 
 // PREF: browser UI density
-user_pref("browser.uidensity", 1);
+user_pref("browser.uidensity", 0);
 
 // PREF: UI
 user_pref("browser.download.autohideButton", false); // don't hide download button
@@ -259,6 +259,10 @@ user_pref("browser.uiCustomization.state", "{\"placements\":{\"widget-overflow-f
 
 // PREF: Sidebar
 user_pref("sidebar.main.tools", "syncedtabs,history,bookmarks");
+
+// PREF: Vertical tabs
+user_pref("sidebar.verticalTabs", true);
+user_pref("sidebar.visibility", "always-show");
 
 // PREF: don't close Firefox with the last tab
 user_pref("browser.tabs.closeWindowWithLastTab", false);
