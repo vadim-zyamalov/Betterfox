@@ -248,6 +248,9 @@ user_pref("browser.download.useDownloadDir", true);
 user_pref("browser.theme.content-theme", 0);
 user_pref("browser.theme.toolbar-theme", 0);
 
+// PREF: no bookmarks panel
+user_pref("browser.toolbars.bookmarks.visibility", "never");
+
 // PREF: browser UI density
 user_pref("browser.uidensity", 1);
 
